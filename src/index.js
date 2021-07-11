@@ -1,9 +1,9 @@
 import './sass/main.scss';
 import cards from './menu.json';
-import menuCardsTpl from './templates/menuCardsTpl.hbs';
+import menu-cardsitems from './templates/menu-cardsitems.hbs';
 import {onChangeCheckbox} from './js/checkbox.js';
 
-const menuCards = menuCardsTpl(cards);
+const menuCards = menu-cardsitems(cards);
 const menuRender = document.querySelector('.js-menu');
 const checkboxRef = document.querySelector('#theme-switch-toggle');
 
